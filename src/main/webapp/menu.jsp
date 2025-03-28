@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <title>メニュー</title>
+    
     <style>
         .button2 { padding: 5px 10px; border-radius: 5px; cursor: pointer; }
         .button-container { display: flex; flex-direction: column; gap: 30px; width: 120px; }
