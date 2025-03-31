@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <title>メニュー</title>
+    
     <style>
         .button2 { padding: 5px 10px; border-radius: 5px; cursor: pointer; }
         .button-container { display: flex; flex-direction: column; gap: 30px; width: 120px; }
@@ -29,12 +30,11 @@
     <h1>メニュー</h1>
     
     <div class="button-container">
-        <form action="customer-list-servlet" method="GET">
+        <form action="listCustomer" method="GET">
             <button class="button2 CustomerList-button" type="submit">顧客一覧</button>
         </form>
         
-        <form action="customer-register-servlet" method="GET">
-        <input type="hidden" name="id" value="<%= session.getAttribute("id") %>">
+        <form action="registerCustomer" method="GET">
         <button class="button2 CustRegi-button" type="submit">新規顧客登録</button>
          </form>
     </div>
